@@ -8,3 +8,5 @@ mogrify -resize 28x28\! -quality 100 -path ../data "*.jpeg"
 command for converting image to greyscale
 mogrify -colorspace Gray ../gray "*.jpeg"
 
+command to crop the black portion surrounding the retina
+mogrify -crop 10% -quality 100 -path ../data "*.jpeg"
